@@ -5,3 +5,4 @@
 - Node Express
 - Prisma
 - PostgreSQL
+- jwt
