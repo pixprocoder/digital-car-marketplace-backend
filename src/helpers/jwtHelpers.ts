@@ -6,7 +6,7 @@ import jwt, { Secret } from "jsonwebtoken";
 // expireTime: string
 // }
 
-const createToken = (payload, secret, expireTime): string => {
+const createToken = (payload: any, secret: any, expireTime: any): string => {
   return jwt.sign(payload, secret, { expiresIn: expireTime });
 };
 

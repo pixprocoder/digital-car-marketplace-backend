@@ -17,14 +17,16 @@ const loginUser = async (payload: any) => {
   if (isUserExist.password !== password) {
     throw new Error("Password not matched");
   }
+
+  const { role } = isUserExist;
   const accessToken = jwtHelpers.createToken(
-    { email },
+    { email, role },
     config.jwt.secret as Secret,
     config.jwt.expires_in as string
   );
 
   const refreshToken = jwtHelpers.createToken(
-    { email },
+    { email, role },
     config.jwt.refresh_secret as Secret,
     config.jwt.refresh_expires_in as string
   );
