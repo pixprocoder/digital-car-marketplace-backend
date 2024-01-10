@@ -6,3 +6,7 @@
 - Prisma
 - PostgreSQL
 - jwt
+
+## Main Key Features
+
+- Authentication
