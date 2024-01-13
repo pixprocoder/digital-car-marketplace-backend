@@ -71,6 +71,7 @@ model Mechanic {
 enum Role {
   admin
   super_admin
+  user
 }
 
 enum CarStatus {
