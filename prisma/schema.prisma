@@ -7,9 +7,10 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model User {
-  id         Int     @id @unique
+model Users {
+  userId     String  @id @default(uuid())
   email      String  @unique
+  name       String?
   password   String
   profileURL String?
   role       Role?

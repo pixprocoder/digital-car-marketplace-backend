@@ -5,13 +5,13 @@ const prisma = new PrismaClient({
 });
 
 const createUser = async (payload: any) => {
-  const result = await prisma.user.create(payload);
+  const result = await prisma.users.create(payload);
 
   return result;
 };
 
 const getAllUser = async () => {
-  const result = await prisma.user.findMany({});
+  const result = await prisma.users.findMany({});
 
   return result;
 };
