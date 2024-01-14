@@ -7,9 +7,20 @@ exports.AuthService = void 0;
 const config_1 = __importDefault(require("../../../config"));
 const jwtHelpers_1 = require("../../../helpers/jwtHelpers");
 const prisma_1 = __importDefault(require("../../../shared/prisma"));
+const createUser = async (payload) => {
+    const { email, role } = payload;
+    const user = await prisma_1.default.users.create({ data: payload });
+    const accessToken = jwtHelpers_1.jwtHelpers.createToken({ email, role }, config_1.default.jwt.secret, config_1.default.jwt.expires_in);
+    const refreshToken = jwtHelpers_1.jwtHelpers.createToken({ email, role }, config_1.default.jwt.refresh_secret, config_1.default.jwt.refresh_expires_in);
+    return {
+        accessToken,
+        refreshToken,
+        user,
+    };
+};
 const loginUser = async (payload) => {
     const { email, password } = payload;
-    const isUserExist = await prisma_1.default.user.findUnique({ where: { email } });
+    const isUserExist = await prisma_1.default.users.findUnique({ where: { email } });
     console.log(isUserExist);
     if (!isUserExist) {
         throw new Error("user does not exist");
@@ -27,4 +38,5 @@ const loginUser = async (payload) => {
 };
 exports.AuthService = {
     loginUser,
+    createUser,
 };
