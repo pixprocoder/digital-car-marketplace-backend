@@ -5,7 +5,6 @@ const prisma = new PrismaClient({
 });
 
 const createUser = async (payload: any) => {
-  console.log(payload);
   const result = await prisma.user.create(payload);
 
   return result;

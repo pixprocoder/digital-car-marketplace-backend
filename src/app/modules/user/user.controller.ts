@@ -1,15 +1,26 @@
 import { Request, Response } from "express";
 import { userService } from "./user.service";
+import sendResponse from "../../../shared/sendResponse";
 
 const createUser = (req: Request, res: Response) => {
   const result = userService.createUser(req.body);
-  return res.send({ message: "user created successfully", data: result });
+
+  sendResponse(res, {
+    statusCode: 200,
+    success: true,
+    message: "User created  successfully !",
+    data: result,
+  });
 };
 
 const getAllUser = async (req: Request, res: Response) => {
   const result = await userService.getAllUser();
-  console.log(result);
-  return res.send({ message: "user fetched successfully", data: result });
+  sendResponse(res, {
+    statusCode: 200,
+    success: true,
+    message: "User fetched successfully !",
+    data: result,
+  });
 };
 
 export const userController = {
