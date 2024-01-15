@@ -13,6 +13,17 @@ const createUser = (req: Request, res: Response) => {
   });
 };
 
+const getSingleUser = (req: Request, res: Response) => {
+  const { id } = req.params;
+  const result = userService.getSingleUser(id);
+  sendResponse(res, {
+    statusCode: 200,
+    success: true,
+    message: "User created  successfully !",
+    data: result,
+  });
+};
+
 const getAllUser = async (req: Request, res: Response) => {
   const result = await userService.getAllUser();
   sendResponse(res, {
@@ -26,4 +37,5 @@ const getAllUser = async (req: Request, res: Response) => {
 export const userController = {
   createUser,
   getAllUser,
+  getSingleUser,
 };

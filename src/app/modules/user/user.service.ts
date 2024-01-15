@@ -10,6 +10,15 @@ const createUser = async (payload: any) => {
   return result;
 };
 
+const getSingleUser = async (payload: string) => {
+  const result = await prisma.users.findUnique({
+    where: {
+      userId: payload,
+    },
+  });
+
+  return result;
+};
 const getAllUser = async () => {
   const result = await prisma.users.findMany({});
 
@@ -19,4 +28,5 @@ const getAllUser = async () => {
 export const userService = {
   createUser,
   getAllUser,
+  getSingleUser,
 };

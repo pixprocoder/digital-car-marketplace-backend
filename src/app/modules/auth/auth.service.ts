@@ -5,7 +5,6 @@ import prisma from "../../../shared/prisma";
 
 const createUser = async (payload: any) => {
   const { email, role } = payload;
-
   const user = await prisma.users.create({ data: payload });
 
   const accessToken = jwtHelpers.createToken(
