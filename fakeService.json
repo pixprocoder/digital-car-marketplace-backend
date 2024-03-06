@@ -1,81 +1,91 @@
 [
   {
     "serviceId": 1,
-    "serviceName": "Oil Change",
+    "productName": "K25 Midas Black Box/ 18kt Phw B",
     "description": "Regular oil change service for your vehicle.",
     "price": 50.0,
+    "image":"https://i.ibb.co/M1ws5pS/bag-1.jpg",
     "duration": "1 hour",
     "availabilityStatus": "Available"
   },
   {
     "serviceId": 2,
-    "serviceName": "Brake Inspection",
+    "productName": "K25 Midas Black Box/ 18kt Phw B",
     "description": "Comprehensive brake system inspection.",
     "price": 75.0,
+    "image":"https://i.ibb.co/M1ws5pS/bag-1.jpg",
     "duration": "1.5 hours",
     "availabilityStatus": "Available"
   },
   {
     "serviceId": 3,
-    "serviceName": "Engine Tune-up",
+    "productName": "K25 Midas Black Box/ 18kt Phw B",
     "description": "Optimizing your engine performance.",
     "price": 120.0,
+    "image":"https://i.ibb.co/M1ws5pS/bag-1.jpg",
     "duration": "2 hours",
     "availabilityStatus": "Unavailable"
   },
   {
     "serviceId": 4,
-    "serviceName": "Tire Rotation",
+    "productName": "K25 Midas Black Box/ 18kt Phw B",
     "description": "Evenly distribute tire wear for better longevity.",
     "price": 40.0,
+    "image":"https://i.ibb.co/M1ws5pS/bag-1.jpg",
     "duration": "1 hour",
     "availabilityStatus": "Available"
   },
   {
     "serviceId": 5,
-    "serviceName": "Air Conditioning Check",
+    "productName": "K25 Midas Black Box/ 18kt Phw B",
     "description": "Ensure your AC system is working efficiently.",
     "price": 60.0,
+    "image":"https://i.ibb.co/M1ws5pS/bag-1.jpg",
     "duration": "1.5 hours",
     "availabilityStatus": "Available"
   },
   {
     "serviceId": 6,
-    "serviceName": "Transmission Fluid Change",
+    "productName": "K25 Midas Black Box/ 18kt Phw B",
     "description": "Replace old transmission fluid for smoother operation.",
     "price": 90.0,
+    "image":"https://i.ibb.co/M1ws5pS/bag-1.jpg",
     "duration": "2 hours",
     "availabilityStatus": "Available"
   },
   {
     "serviceId": 7,
-    "serviceName": "Battery Replacement",
+    "productName": "K25 Midas Black Box/ 18kt Phw B",
     "description": "Install a new battery for reliable starting power.",
     "price": 100.0,
+    "image":"https://i.ibb.co/M1ws5pS/bag-1.jpg",
     "duration": "1.5 hours",
     "availabilityStatus": "Available"
   },
   {
     "serviceId": 8,
-    "serviceName": "Diagnostic Service",
+    "productName": "K25 Midas Black Box/ 18kt Phw B",
     "description": "Identify and troubleshoot vehicle issues.",
     "price": 80.0,
+    "image":"https://i.ibb.co/M1ws5pS/bag-1.jpg",
     "duration": "2 hours",
     "availabilityStatus": "Unavailable"
   },
   {
     "serviceId": 9,
-    "serviceName": "Wheel Alignment",
+    "productName": "K25 Midas Black Box/ 18kt Phw B",
     "description": "Ensure proper alignment for better tire wear.",
     "price": 65.0,
+    "image":"https://i.ibb.co/M1ws5pS/bag-1.jpg",
     "duration": "1.5 hours",
     "availabilityStatus": "Available"
   },
   {
     "serviceId": 10,
-    "serviceName": "Spark Plug Replacement",
+    "productName": "K25 Midas Black Box/ 18kt Phw B",
     "description": "Install new spark plugs for improved engine performance.",
     "price": 55.0,
+    "image":"https://i.ibb.co/M1ws5pS/bag-1.jpg",
     "duration": "1.5 hours",
     "availabilityStatus": "Available"
   }
